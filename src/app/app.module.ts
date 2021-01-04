@@ -1,3 +1,5 @@
+import { SidebarComponent } from "./components/sidebar/sidebar.component";
+import { HomeComponent } from "./components/home/home.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
@@ -7,7 +9,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./shared/material/material.module";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent, SidebarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
