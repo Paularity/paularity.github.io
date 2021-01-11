@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss']
+})
+export class NavbarComponent implements OnInit {
+
+  menus = [
+    {name: 'home', sortOrder: 0},
+    {name: 'collection', sortOrder: 1},
+    {name: 'play', sortOrder: 2},
+    {name: 'career', sortOrder: 3},
+    {name: 'store', sortOrder: 4},
+  ]
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

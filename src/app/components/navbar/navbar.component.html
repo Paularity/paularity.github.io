@@ -1,0 +1,15 @@
+<div class="d-flex flex-row w-100 valo-navbar">
+  <div class="d-flex valo-menu" *ngFor="let menu of menus">
+    <ng-container *ngIf="menu.name !== 'play'">
+      <div class="regular-menu">
+        <p>{{ menu.name }}</p>
+      </div>
+    </ng-container>
+    <ng-container *ngIf="menu.name === 'play'">
+      <div class="main-button">
+        <span>{{ menu.name }}</span>
+      </div>
+    </ng-container>
+    <div class="diamond"></div>
+  </div>
+</div>
