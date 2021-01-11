@@ -20,4 +20,18 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  clickedAudio(){
+    let audio = new Audio();
+    audio.src = "../../../assets/audio/menu-click.mp3";
+    audio.load();
+    audio.play();
+  }
+
+  hoveredAudio(){
+    let audio = new Audio();
+    audio.src = "../../../assets/audio/menu-hover.mp3";
+    audio.load();
+    audio.play();
+  }
+
 }

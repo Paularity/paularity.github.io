@@ -1,5 +1,5 @@
 <div class="d-flex flex-row w-100 valo-navbar">
-  <div class="d-flex valo-menu" *ngFor="let menu of menus">
+  <div class="d-flex valo-menu" *ngFor="let menu of menus" (click)="clickedAudio()" (mouseenter)="hoveredAudio()" >
     <ng-container *ngIf="menu.name !== 'play'">
       <div class="regular-menu">
         <p>{{ menu.name }}</p>
