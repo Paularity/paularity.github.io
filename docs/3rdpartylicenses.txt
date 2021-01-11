@@ -91,12 +91,6 @@ THE SOFTWARE.
 
 @angular/material/dialog
 
-@angular/material/icon
-
-@angular/material/progress-bar
-
-@angular/material/toolbar
-
 @angular/material/tooltip
 
 @angular/platform-browser
