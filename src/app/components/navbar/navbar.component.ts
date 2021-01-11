@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.playBgAudio();
   }
 
   clickedAudio(){
@@ -32,6 +33,14 @@ export class NavbarComponent implements OnInit {
     audio.src = "../../../assets/audio/menu-hover.mp3";
     audio.load();
     audio.play();
+  }
+
+  playBgAudio(){
+    let audio = new Audio();
+    audio.src = "../../../assets/audio/bg-music.mp3";
+    audio.load();
+    audio.play();
+    audio.loop = true;
   }
 
 }
