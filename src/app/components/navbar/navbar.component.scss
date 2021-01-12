@@ -1,3 +1,13 @@
+@media only screen and (max-width: 1400px) {
+  .regular-menu {
+    display: none !important;
+  }
+
+  .diamond {
+    display: none !important;
+  }
+}
+
 .valo-navbar {
   border-bottom: 2px solid #ced1d893;
   justify-content: center;
@@ -47,6 +57,7 @@
       background-color: #ced1d8;
       transform: rotate(45deg);
       margin: 50px; /* Location Adjustment */
+      z-index: 1;
     }
 
     .main-button {
@@ -56,7 +67,7 @@
       background-color: #ced1d8d4;
       color: #303136;
       width: 400px;
-      height: 100%;
+      height: 54px;
       align-items: center;
       justify-content: center;
       clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);

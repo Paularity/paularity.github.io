@@ -8,9 +8,10 @@ import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./shared/material/material.module";
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { DigitalBackgroundComponent } from './components/digital-background/digital-background.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SidebarComponent, NavbarComponent],
+  declarations: [AppComponent, HomeComponent, SidebarComponent, NavbarComponent, DigitalBackgroundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
