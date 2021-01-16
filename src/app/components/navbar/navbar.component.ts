@@ -1,41 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { MainRoute } from "src/app/common/models/main-route.model";
+import { CommonRoutes } from "src/app/common/routes/common-routes";
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: "app-navbar",
+  templateUrl: "./navbar.component.html",
+  styleUrls: ["./navbar.component.scss"],
 })
 export class NavbarComponent implements OnInit {
+  menus: MainRoute[];
 
-  menus = [
-    {name: 'home', sortOrder: 0},
-    {name: 'collection', sortOrder: 1},
-    {name: 'play', sortOrder: 2},
-    {name: 'career', sortOrder: 3},
-    {name: 'store', sortOrder: 4},
-  ]
-
-  constructor() { }
+  constructor() {
+    this.menus = CommonRoutes.mainLinks;
+  }
 
   ngOnInit() {
     this.playBgAudio();
   }
 
-  clickedAudio(){
+  clickedAudio() {
     let audio = new Audio();
     audio.src = "../../../assets/audio/menu-click.mp3";
     audio.load();
     audio.play();
   }
 
-  hoveredAudio(){
+  hoveredAudio() {
     let audio = new Audio();
     audio.src = "../../../assets/audio/menu-hover.mp3";
     audio.load();
     audio.play();
   }
 
-  playBgAudio(){
+  playBgAudio() {
     let audio = new Audio();
     audio.src = "../../../assets/audio/bg-music.mp3";
     audio.load();
@@ -43,5 +40,4 @@ export class NavbarComponent implements OnInit {
     audio.autoplay = true;
     audio.loop = true;
   }
-
 }

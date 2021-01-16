@@ -32,6 +32,12 @@ $paularity-theme: mat-light-theme(
 /* You can add global styles to this file, and also import other style files */
 @import "assets/styles/paularity-colors";
 
+@font-face {
+  font-family: "valorantFont";
+  src: local("valorantFont"),
+    url(./assets/fonts/valorantFont.ttf) format("truetype");
+}
+
 html,
 body {
   height: 100%;
@@ -40,6 +46,11 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: #181818 !important;
+  overflow: hidden;
+}
+
+button {
+  outline: none !important;
 }
 
 .primary-bg {

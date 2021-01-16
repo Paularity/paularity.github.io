@@ -1,3 +1,5 @@
+$active-color: rgb(179, 233, 168) !important;
+
 @media only screen and (max-width: 1400px) {
   .regular-menu {
     display: none !important;
@@ -13,10 +15,10 @@
   justify-content: center;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none;
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 
   .valo-menu {
     position: relative;
@@ -25,6 +27,7 @@
     align-items: center;
     font-weight: bold;
     letter-spacing: 2px;
+    outline: none;
     cursor: pointer;
 
     p {
@@ -40,13 +43,12 @@
       transition: 200ms;
 
       &:hover {
-        opacity: .8;
+        opacity: 0.8;
       }
 
       &:active {
         transform: scale(0.97);
       }
-
     }
 
     .diamond {
@@ -73,7 +75,7 @@
       clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
       transition: 200ms;
       &:hover {
-        opacity: .8;
+        opacity: 0.8;
       }
 
       &:active {
@@ -83,3 +85,8 @@
   }
 }
 
+.is-active {
+  .diamond {
+    background-color: #{$active-color};
+  }
+}

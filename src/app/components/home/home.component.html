@@ -1,3 +1,16 @@
-<p>
-  home works!
-</p>
+<div class="d-flex area" [@fadeInOnEnter] [@fadeOutOnLeave]>
+  <section id="header-section">
+    <div class="d flex">
+      <p id="header">
+        Paularity
+        <span>_</span>
+      </p>
+      <p id="sub-header">Frontend Developer</p>
+    </div>
+    <button routerLink='/collection' mat-stroked-button id="explore-button">Explore</button>
+  </section>
+
+  <ul class="circles">
+    <li *ngFor="let item of animatedBoxes"></li>
+  </ul>
+</div>
