@@ -12,9 +12,11 @@ import { DigitalBackgroundComponent } from './components/digital-background/digi
 import { MainComponent } from './components/main/main.component';
 import { CollectionComponent } from './components/collection/collection.component';
 import { CareerComponent } from './components/career/career.component';
+import { ServicesComponent } from './components/services/services.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SidebarComponent, NavbarComponent, DigitalBackgroundComponent, MainComponent, RoutingComponents, CollectionComponent, CareerComponent],
+  declarations: [AppComponent, HomeComponent, SidebarComponent, NavbarComponent, DigitalBackgroundComponent, MainComponent, RoutingComponents, CollectionComponent, CareerComponent, ServicesComponent, ContactComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -8,6 +8,9 @@ import { Router } from "@angular/router";
   styleUrls: ["./main.component.scss"],
 })
 export class MainComponent implements OnInit {
+
+  animatedBoxes = Array(10).fill(0);
+
   constructor(private router: Router) {}
 
   ngOnInit() {

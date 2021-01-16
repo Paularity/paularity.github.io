@@ -14,9 +14,7 @@ export class NavbarComponent implements OnInit {
     this.menus = CommonRoutes.mainLinks;
   }
 
-  ngOnInit() {
-    this.playBgAudio();
-  }
+  ngOnInit() {}
 
   clickedAudio() {
     let audio = new Audio();
@@ -30,14 +28,5 @@ export class NavbarComponent implements OnInit {
     audio.src = "../../../assets/audio/menu-hover.mp3";
     audio.load();
     audio.play();
-  }
-
-  playBgAudio() {
-    let audio = new Audio();
-    audio.src = "../../../assets/audio/bg-music.mp3";
-    audio.load();
-    audio.play();
-    audio.autoplay = true;
-    audio.loop = true;
   }
 }
