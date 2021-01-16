@@ -14,9 +14,10 @@ import { CollectionComponent } from './components/collection/collection.componen
 import { CareerComponent } from './components/career/career.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SidebarComponent, NavbarComponent, DigitalBackgroundComponent, MainComponent, RoutingComponents, CollectionComponent, CareerComponent, ServicesComponent, ContactComponent],
+  declarations: [AppComponent, HomeComponent, SidebarComponent, NavbarComponent, DigitalBackgroundComponent, MainComponent, RoutingComponents, CollectionComponent, CareerComponent, ServicesComponent, ContactComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

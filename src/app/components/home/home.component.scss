@@ -51,19 +51,16 @@
       width: 0;
     }
   }
-
-  #explore-button {
-    margin-top: 40px;
-    color: #cfcfcf;
-    border: 1px solid #aaaaaa;
-    font-size: 1.5em;
-    padding: 10px 60px;
-    text-transform: uppercase;
-  }
 }
 
 .fab-btn {
   color: #cfcfcf;
   border: 1px solid #aaaaaa;
   background-color: transparent;
+  transition: 200ms;
+
+  &:hover {
+    color: white !important;
+    border-color: white !important;
+  }
 }

@@ -46,7 +46,6 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: #181818 !important;
-  overflow: hidden;
 }
 
 button {
@@ -64,4 +63,58 @@ button {
 }
 .secondary-text {
   color: $color-secondary;
+}
+
+.page-header {
+  font: bold 2.4em valorantFont;
+  color: white;
+}
+
+.valo-button {
+  color: #cfcfcf;
+  border: 1px solid #cfcfcf !important;
+  font-size: 1.5em;
+  padding: 10px 40px !important;
+  text-transform: uppercase;
+  transition: 200ms;
+
+  &:hover {
+    color: white !important;
+    border-color: white !important;
+  }
+}
+
+/* input color class */
+input.mat-input-element {
+  color: white;
+}
+
+.mat-input-element {
+  caret-color: white;
+}
+
+/* Change label color on focused */
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #cfcfcf !important;
+}
+
+/* underline border color on focused */
+.mat-focused .mat-form-field-underline .mat-form-field-ripple{
+  background-color: #cfcfcf !important;
+}
+
+.mat-form-field-label {
+  color: #cfcfcf;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline{
+  color: #cfcfcf;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+  color: #cfcfcf;
+}
+
+textarea.mat-input-element {
+  color: white;
 }

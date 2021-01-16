@@ -7,11 +7,23 @@ import { Routes, RouterModule } from "@angular/router";
 import { CollectionComponent } from "./components/collection/collection.component";
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
-  { path: "collection", component: CollectionComponent },
-  { path: "career", component: CareerComponent },
-  { path: "services", component: ServicesComponent },
-  { path: "contact", component: ContactComponent },
+  { path: "home", component: HomeComponent, data: { routeIndex: 0 } },
+  {
+    path: "collection",
+    component: CollectionComponent,
+    data: { routeIndex: 1 },
+  },
+  { path: "career", component: CareerComponent, data: { routeIndex: 2 } },
+  {
+    path: "services",
+    component: ServicesComponent,
+    data: { routeIndex: 3 },
+  },
+  {
+    path: "contact",
+    component: ContactComponent,
+    data: { routeIndex: 4 },
+  },
 ];
 
 @NgModule({
