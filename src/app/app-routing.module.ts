@@ -13,7 +13,7 @@ const routes: Routes = [
     component: CollectionComponent,
     data: { routeIndex: 1 },
   },
-  { path: "career", component: CareerComponent, data: { routeIndex: 2 } },
+  { path: "skills", component: CareerComponent, data: { routeIndex: 2 } },
   {
     path: "services",
     component: ServicesComponent,

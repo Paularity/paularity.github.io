@@ -17,8 +17,8 @@ export class CommonRoutes {
       children: [],
     },
     {
-      title: "career",
-      link: "/career",
+      title: "skills",
+      link: "/skills",
       icon: "",
       sortOrder: 2,
       children: [],
