@@ -48,7 +48,7 @@ export class MainComponent implements OnInit, OnDestroy {
     this.setStorage();
   }
 
-  @HostListener("window:load", ["$event"])
+  @HostListener("window:load", [])
   unloadNotification() {
     this.subs.push(
       this.currentPageService.get().subscribe((res) => {
@@ -63,8 +63,7 @@ export class MainComponent implements OnInit, OnDestroy {
     if (sessionStorage.getItem(this.THIS_PAGE)) {
       let page = sessionStorage.getItem(this.THIS_PAGE);
       this.currentPageService.set(page);
-    }
-    else {
+    } else {
       this.currentPageService.set("/home");
       this.router.navigate(["/home"]);
     }
