@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Deploy changes
 
 Build application by Running `ng build --prod --base-href https://paularity.github.io/` for a dev server.
-Final Step is to deploy application to gh-pages: `ngh --no-silent`
+Then, deploy application to gh-pages: `npx angular-cli-ghpages --dir=dist`
 
 ## Development server
 
