@@ -1,0 +1,14 @@
+#close-btn {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+    transform: scale(0.9);
+    transition: 100ms;
+  }
+}
+
+#dialog-container {
+  background-color: #353b46;
+  padding: 20px;
+  border-radius: 10px;
+}

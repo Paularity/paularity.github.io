@@ -1,0 +1,15 @@
+<div class="row m-0 mt-3 p-2">
+  <div class="col-md-12">
+    <p class="page-header">My Portfolio</p>
+    <div class="divider mb-4" style="max-width:270px;"></div>
+    <div class="container p-0 mb-5">
+      <div class="item" *ngFor="let item of imagePorts" (mouseover)="item.hovered = true"
+        (mouseout)="item.hovered = false">
+        <img (click)="openDialog(item.src)" [src]="item.src">
+        <div class="overlay" [ngClass]="{'hideOverlay': item.hovered}">
+          <div class="text">{{item.title}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

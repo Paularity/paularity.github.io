@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "paularity-github": {
+      "hosting": {
+        "paularity": [
+          "paularity-github"
+        ]
+      }
+    }
+  }
+}

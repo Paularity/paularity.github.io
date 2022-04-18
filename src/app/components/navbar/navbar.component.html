@@ -1,0 +1,15 @@
+<div class="d-flex flex-row w-100 valo-navbar container">
+  <div
+    class="d-flex valo-menu"
+    *ngFor="let menu of menus"
+    (click)="clickedAudio()"
+    (mouseenter)="hoveredAudio()"
+    [routerLink]="menu.link"
+    [routerLinkActive]="['is-active']"
+  >
+    <div class="regular-menu">
+      <p>{{ menu.title }}</p>
+    </div>
+    <div class="diamond"></div>
+  </div>
+</div>

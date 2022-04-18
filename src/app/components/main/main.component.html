@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="container" [@animRoutes]="animationState">
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
+</div>
+<div class="area">
+  <ul class="circles">
+    <li *ngFor="let item of animatedBoxes"></li>
+  </ul>
+</div>
+<div class="arrow previous-page" (click)="goToPreviousPage()" *ngIf="selectedPage !== '/home'" >
+  <span></span>
+  <span></span>
+</div>
+<div class="arrow next-page" (click)="goToNextPage()" *ngIf="selectedPage !== '/contact'">
+  <span></span>
+  <span></span>
+</div>
+<app-footer></app-footer>
