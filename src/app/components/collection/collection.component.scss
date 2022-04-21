@@ -46,7 +46,7 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .hideOverlay {
@@ -64,4 +64,23 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
+}
+
+.code-area > span {
+  display: block;
+}
+
+.code-area {color: #d3d7de;}
+
+
+@media screen and (max-width: 320px) {
+  .code-area {
+    font-size: 5vw;
+    min-width: auto;
+    width: 95%;
+    margin: auto;
+    padding: 5px;
+    padding-left: 10px;
+    line-height: 6.5vw;
+  }
 }
