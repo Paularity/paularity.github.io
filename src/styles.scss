@@ -137,3 +137,28 @@ textarea.mat-input-element {
   background-color: transparent !important;
 }
 
+
+//SCROLL BAR
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f5f5f5;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgb(202, 202, 202);
+  border-radius: 20px;
+  transition: 200ms;
+
+  &:hover {
+    background: rgb(184, 183, 183) !important;
+  }
+
+  &:active {
+    background: rgb(163, 163, 163) !important;
+  }
+}
+
+*::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}

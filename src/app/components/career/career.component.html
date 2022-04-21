@@ -4,7 +4,7 @@
     <div class="divider mb-4" style="max-width:250px;"></div>
     <div class="d-flex flex-column">
       <div class="expertise">
-        <div class="skill-badge">
+        <div (click)="openWebDevDialog()" class="skill-badge">
           <img src="assets/img/logos/web_dev.png" alt="" />
         </div>
         <div class="body">
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="expertise">
-        <div class="skill-badge">
+        <div (click)="openMobileDevDialog()" class="skill-badge">
           <img src="assets/img/logos/mobiledev.png" alt="" />
         </div>
         <div class="body">
@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class="col-md-6">
-    <section class="section">
+    <section class="section slide-right">
       <div class="wall">
         <div class="v-boxes">
           <div class="box">

@@ -20,6 +20,8 @@ import { LightboxModalComponent } from "./components/collection/lightbox-modal/l
 // import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
 // import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 import { environment } from "../environments/environment";
+import { WebdevModalComponent } from "./components/career/webdev-modal/webdev-modal.component";
+import { MobiledevModalComponent } from "./components/career/mobiledev-modal/mobiledev-modal.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,8 @@ import { environment } from "../environments/environment";
     ContactComponent,
     FooterComponent,
     LightboxModalComponent,
+    WebdevModalComponent,
+    MobiledevModalComponent,
   ],
   entryComponents: [LightboxModalComponent],
   imports: [
