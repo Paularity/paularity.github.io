@@ -37,7 +37,7 @@
           </span>
         </span>
         <div class="input-group mb-2 mr-sm-2 mt-4" style="max-width: 300px;" *ngIf="showInputPinCode.value === true">
-          <input type="password" class="form-control" placeholder="Access Code" maxlength="6" #accessCode>
+          <input type="password" class="form-control" placeholder="Access Code" maxlength="6" #accessCode (keydown.enter)="sendAccessCode(accessCode)">
           <div class="input-group-append">
             <button class="btn btn-outline-primary mb-2" (click)="sendAccessCode(accessCode)">ENTER</button>
           </div>

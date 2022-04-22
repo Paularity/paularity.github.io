@@ -36,7 +36,6 @@ export class CollectionComponent implements OnInit {
 
   sendAccessCode(code) {
     this.pinCode.next(code.value);
-    console.log(code.value);
   }
 
   toggleAccessCodeInput() {
