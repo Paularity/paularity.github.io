@@ -15,6 +15,7 @@ export class CollectionComponent implements OnInit {
   showInputPinCode: BehaviorSubject<Boolean> = new BehaviorSubject<Boolean>(
     false
   );
+  inputTryCount: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 
   private SECRET_CODE = "5139";
 
@@ -40,9 +41,15 @@ export class CollectionComponent implements OnInit {
 
   sendAccessCode(code) {
     this.pinCode.next(code.value);
+    this.inputTryCount.next(this.inputTryCount.value + 1);
   }
 
   toggleAccessCodeInput() {
     this.showInputPinCode.next(!this.showInputPinCode.value);
+  }
+
+  hasExceededMaximumTryCount() {
+    if (this.inputTryCount.value >= 3) return true;
+    return false;
   }
 }

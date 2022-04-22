@@ -46,6 +46,7 @@
             *ngIf="pinCode.value !== '' && pinCode.value !== getSecretCode()">
             You have entered an incorrect access code!
           </small>
+          <!-- <p *ngIf="hasExceededMaximumTryCount()">Exceeded Maximum Try!</p> -->
         </div>
       </div>
     </div>
