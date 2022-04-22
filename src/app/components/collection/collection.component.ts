@@ -16,7 +16,7 @@ export class CollectionComponent implements OnInit {
     false
   );
 
-  SECRET_CODE = "5139";
+  private SECRET_CODE = "5139";
 
   constructor(public dialog: MatDialog) {
     this.imagePorts = COLLECTION_LIST.collections;
@@ -30,6 +30,10 @@ export class CollectionComponent implements OnInit {
     // dialogRef.afterClosed().subscribe((result) => {
     //   console.log(`Dialog result: ${result}`);
     // });
+  }
+
+  getSecretCode() {
+    return this.SECRET_CODE;
   }
 
   ngOnInit() {}
