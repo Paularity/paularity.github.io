@@ -20,7 +20,15 @@ export class CollectionComponent implements OnInit {
   private SECRET_CODE = "5139";
 
   constructor(public dialog: MatDialog) {
-    this.imagePorts = COLLECTION_LIST.collections;
+    this.imagePorts = COLLECTION_LIST.collections.sort((a, b) => {
+      if (a.title < b.title) {
+        return -1;
+      }
+      if (a.title > b.title) {
+        return 1;
+      }
+      return 0;
+    });
   }
 
   openDialog(src) {

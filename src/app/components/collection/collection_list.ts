@@ -21,11 +21,6 @@ export const COLLECTION_LIST = {
       hovered: false,
     },
     {
-      src: "assets/img/collections/haase.jpg",
-      title: "Disco #4",
-      hovered: false,
-    },
-    {
       src: "assets/img/collections/mining.jpg",
       title: "Web Mining #1",
       hovered: false,
@@ -58,6 +53,11 @@ export const COLLECTION_LIST = {
     {
       src: "assets/img/collections/mobile3.png",
       title: "Mobile - Shutdown System #3",
+      hovered: false,
+    },
+    {
+      src: "assets/img/collections/flutter-web.png",
+      title: "Admin Management - Flutter Web",
       hovered: false,
     },
   ],
