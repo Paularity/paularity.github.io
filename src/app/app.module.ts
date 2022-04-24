@@ -22,6 +22,7 @@ import { LightboxModalComponent } from "./components/collection/lightbox-modal/l
 import { environment } from "../environments/environment";
 import { WebdevModalComponent } from "./components/career/webdev-modal/webdev-modal.component";
 import { MobiledevModalComponent } from "./components/career/mobiledev-modal/mobiledev-modal.component";
+import { BibleStudyComponent } from "./components/bible-study/bible-study.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { MobiledevModalComponent } from "./components/career/mobiledev-modal/mob
     LightboxModalComponent,
     WebdevModalComponent,
     MobiledevModalComponent,
+    BibleStudyComponent,
   ],
   entryComponents: [LightboxModalComponent],
   imports: [

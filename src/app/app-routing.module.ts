@@ -5,6 +5,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { CollectionComponent } from "./components/collection/collection.component";
+import { BibleStudyComponent } from "./components/bible-study/bible-study.component";
 
 const routes: Routes = [
   { path: "home", component: HomeComponent, data: { routeIndex: 0 } },
@@ -23,6 +24,11 @@ const routes: Routes = [
     path: "contact",
     component: ContactComponent,
     data: { routeIndex: 4 },
+  },
+  {
+    path: "biblestudy",
+    component: BibleStudyComponent,
+    // data: { routeIndex: 5 },
   },
 ];
 

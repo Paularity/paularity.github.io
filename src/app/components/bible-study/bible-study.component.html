@@ -1,0 +1,12 @@
+<div class="container bg-dark text-light p-4">
+  <h1>TOPIC: {{selectedTopic.topic}} - {{selectedTopic.date}}</h1>
+  <hr class="bg-light">
+  <ul *ngFor="let verse of selectedTopic.verses">
+    <li>
+      <p class="font-weight-bold">{{ verse.key }} - {{verse.title}}</p>
+      <div class="p-4 text-dark bg-light font-italic rounded">
+        <p *ngFor="let value of verse.values">- {{ value }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
