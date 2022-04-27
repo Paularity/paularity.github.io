@@ -63,10 +63,11 @@ export class MainComponent implements OnInit, OnDestroy {
     if (sessionStorage.getItem(this.THIS_PAGE)) {
       let page = sessionStorage.getItem(this.THIS_PAGE);
       this.currentPageService.set(page);
-    } else {
-      this.currentPageService.set("/home");
-      this.router.navigate(["/home"]);
     }
+    //  else {
+    //   this.currentPageService.set("/home");
+    //   this.router.navigate(["/home"]);
+    // }
   }
 
   onActivate($event) {

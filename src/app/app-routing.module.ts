@@ -8,6 +8,7 @@ import { CollectionComponent } from "./components/collection/collection.componen
 import { BibleStudyComponent } from "./components/bible-study/bible-study.component";
 
 const routes: Routes = [
+  { path: "", component: HomeComponent, data: { routeIndex: 0 } },
   { path: "home", component: HomeComponent, data: { routeIndex: 0 } },
   {
     path: "collection",
@@ -28,7 +29,7 @@ const routes: Routes = [
   {
     path: "biblestudy",
     component: BibleStudyComponent,
-    // data: { routeIndex: 5 },
+    data: { routeIndex: 5 },
   },
 ];
 
