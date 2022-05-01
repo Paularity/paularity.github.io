@@ -6,8 +6,8 @@ export const COLLECTION_LIST = {
       hovered: false,
     },
     {
-      src: "assets/img/collections/commerce.jpg",
-      title: "CEEJ Website",
+      src: "assets/img/collections/haase.jpg",
+      title: "Disco - Haase",
       hovered: false,
     },
     {
