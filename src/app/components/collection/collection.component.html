@@ -43,8 +43,8 @@
             <button class="btn btn-outline-primary mb-2" (click)="sendAccessCode(accessCode)">ENTER</button>
           </div>
           <small id="passwordHelpBlock" class="form-text text-danger"
-            *ngIf="pinCode.value !== '' && pinCode.value !== getSecretCode()">
-            You have entered an incorrect access code!
+            >
+            <span *ngIf="pinCode.value !== '' && pinCode.value !== getSecretCode()">You have entered an incorrect access code!</span>
           </small>
           <!-- <p *ngIf="hasExceededMaximumTryCount()">Exceeded Maximum Try!</p> -->
         </div>
