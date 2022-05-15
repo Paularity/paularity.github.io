@@ -1,5 +1,10 @@
 <div class="container bg-dark text-light p-4">
   <h1>TOPIC: {{selectedTopic.topic}} - {{selectedTopic.date}}</h1>
+
+  <div class="w-100 text-center my-5"><iframe class="m-auto" [src]="selectedTopic.video_url | safe" width="560"
+      height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  </div>
   <hr class="bg-light">
   <ul *ngFor="let verse of selectedTopic.verses">
     <li>

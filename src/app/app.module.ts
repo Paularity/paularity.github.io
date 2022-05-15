@@ -23,6 +23,7 @@ import { environment } from "../environments/environment";
 import { WebdevModalComponent } from "./components/career/webdev-modal/webdev-modal.component";
 import { MobiledevModalComponent } from "./components/career/mobiledev-modal/mobiledev-modal.component";
 import { BibleStudyComponent } from "./components/bible-study/bible-study.component";
+import { SafePipe } from './safe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { BibleStudyComponent } from "./components/bible-study/bible-study.compon
     WebdevModalComponent,
     MobiledevModalComponent,
     BibleStudyComponent,
+    SafePipe,
   ],
   entryComponents: [LightboxModalComponent],
   imports: [
