@@ -1,5 +1,244 @@
 export const BIBLE_STUDY = [
   {
+    date: "15/05/2022",
+    video_url: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F105572605159615%2Fvideos%2F371825568230298%2F&show_text=false&width=560&t=0",
+    topic:
+      "Ang Pagmamahal sa Materyal na Bagay ay Kasalanan - 1 Timothy 6:7-11",
+    verses: [
+      {
+        key: "1 Timothy 6: 7-11",
+        values: [
+          "7. Sapagka't wala tayong dinalang anoman sa sanglibutan, at wala rin naman tayong mailalabas na anoman;",
+          "8. Nguni't kung tayo'y may pagkain at pananamit ay masisiyahan na tayo doon.",
+          "9. Datapuwa't ang mga nagsisipagnasang yumaman, ay nangahuhulog sa tukso at sa silo at sa maraming mga pitang hangal at nakasasama, na siyang naglulubog sa mga tao sa kapahamakan at kamatayan.",
+          "10. Sapagka't ang pagibig sa salapi ay ugat ng lahat ng uri ng kasamaan; na sa pagnanasa ng iba ay nangasinsay sa pananampalataya, at tinuhog ang kanilang sarili ng maraming mga kalumbayan.",
+          "11. Datapuwa't ikaw, Oh tao, ng Dios, tumakas ka sa mga bagay na ito, at sumunod ka sa katuwiran, sa kabanalan, sa pananampalataya, sa pagibig, sa pagtitiis, sa kaamuan.",
+        ],
+        title: "Pagmahal sa mga material na bagay",
+      },
+      {
+        key: "Mateo 11:29",
+        values: [
+          "29. Pasanin ninyo ang aking pamatok, at magaral kayo sa akin; sapagka't ako'y maamo at mapagpakumbabang puso: at masusumpungan ninyo ang kapahingahan ng inyong mga kaluluwa.",
+        ],
+        title:
+          "Ang totoong kapahingahan ay hindi ang laman, ngunit ang kaluluwa. Ang Pamatok ni Jesus ay ang Evangelio, ang kanyang mga Salita.",
+      },
+      {
+        key: "Ephesians 2:8",
+        values: [
+          "8. Sapagka't sa biyaya kayo'y nangaligtas sa pamamagitan ng pananampalataya; at ito'y hindi sa inyong sarili, ito'y kaloob ng Dios;",
+        ],
+        title:
+          "Ang Pananampalataya ang biyayang binigay sa aten ng Dyos upang tayo ay maligtas.",
+      },
+      {
+        key: "John 6:51",
+        values: [
+          "51. Ako ang tinapay na buhay na bumabang galing sa langit: kung ang sinoman ay kumain ng tinapay na ito, siya'y mabubuhay magpakailan man: oo at ang tinapay na aking ibibigay ay ang aking laman, sa ikabubuhay ng sanglibutan.",
+        ],
+        title:
+          "Ang tunay na ikabubuhay (Born-again) ng tao, ay ang tinapay ng buhay.",
+      },
+      {
+        key: "Proverbs 19:8",
+        values: [
+          "8. Siyang nagiimpok ng karunungan ay umiibig sa kaniyang sariling kaluluwa: siyang nagiingat ng pagunawa ay makakasumpong ng mabuti.",
+        ],
+        title:
+          "Ang karunungan/wisdom sa salita ng Dyos ay iniibig ang kanyang sarili.",
+      },
+      {
+        key: "1 Corinto 1:24",
+        values: [
+          "24. Nguni't sa kanila na mga tinawag, maging mga Judio at mga Griego, si Cristo ang kapangyarihan ng Dios, at ang karunungan ng Dios.",
+        ],
+        title: "Si Cristo ang tunay na karunungan/wisdom ng Dyos.",
+      },
+      {
+        key: "Santiago 1:21",
+        values: [
+          "Kaya't ihiwalay ninyo ang lahat na karumihan at ang pagapaw ng kasamaan, at tanggapin ninyo na may kaamuan ang salitang itinanim, na makapagliligtas ng inyong mga kaluluwa.",
+        ],
+        title:
+          "Ang salitang makakapagligtas ng kaluluwa, ay ang Evangelio/Word of God.",
+      },
+      {
+        key: "Isaiah 55:2-3",
+        values: [
+          "2. Ano't kayo'y nangaggugugol ng salapi sa hindi pagkain? at ng inyong gawa sa hindi nakabubusog? inyong pakinggan ako, at magsikain kayo ng mabuti, at mangalugod kayo sa katabaan.",
+          "3. Inyong ikiling ang inyong tainga, at magsiparito kayo sa akin; kayo'y magsipakinig, at ang inyong kaluluwa ay mabubuhay: at ako'y makikipagtipan sa inyo ng walang hanggan, sa makatuwid baga'y ng tunay na mga kaawaan ni David.",
+        ],
+        title:
+          "(1 Timoteo 6:8 Explanation sa Pagkaen): Ang pagkain at inumin ng kaluluwa ay walang bayad, at ito ay mabubusog at masisiyahan. Makinig tayo at Unawain ang Evangelio ng Dyos, ang pagkaen ng kaluluwa.",
+      },
+      {
+        key: "Galacia 3:27",
+        values: [
+          "27 Sapagka't ang lahat na sa inyo ay binautismuhan kay Cristo ay ibinihis si Cristo.",
+        ],
+        title:
+          " (1 Timoteo 6:8 Explanation sa Pananamit): Tayo ay masiyahan dahil meron tayong pananamit, hindi sa material, ngunit sa Espiritu.",
+      },
+      {
+        key: "1 Timoteo 6:18",
+        values: [
+          "17 Ang mayayaman sa sanglibutang ito, ay pagbilinan mo na huwag magsipagmataas ng pagiisip, at huwag umasa sa mga kayamanang di nananatili, kundi sa Dios na siyang nagbibigay sa ating sagana ng lahat ng mga bagay upang ating ikagalak;",
+          "18 Na sila'y magsigawa ng mabuti, na sila'y magsiyaman sa mabuting gawa, na sila'y maging handa sa pamimigay, maibigin sa pamamahagi;",
+        ],
+        title: "Tayo ay magsi-yaman hindi sa laman, ngunit sa Espiritu.",
+      },
+      {
+        key: "Marcos 8:36",
+        values: [
+          "36 Sapagka't ano ang mapapakinabang ng tao, na makamtan ang buong sanglibutan, at mapapahamak ang kaniyang buhay?",
+        ],
+        title:
+          "Mpapahamak ang iyong kaluluwa kung ang buhay mo ay nakatingin lang sa sanlibutang ito.",
+      },
+      {
+        key: "1 Corinto 8:9",
+        values: [
+          "9 Sapagka't nalalaman ninyo ang biyaya ng ating Panginoong Jesucristo, na, bagaman siya'y mayaman, gayon ma'y nagpakadukha dahil sa inyo, upang sa pamamagitan ng kaniyang karukhaan ay magsiyaman kayo.",
+        ],
+        title:
+          "Tinubos tayo ni Jesucristo, upang tayo ay yumaman, hindi ng ayon sa laman, ngunit sa Espiritu.",
+      },
+      {
+        key: "Hagai 2:8",
+        values: [
+          "8 Ang pilak ay akin, at ang ginto ay akin, sabi ng Panginoon ng mga hukbo.",
+        ],
+        title:
+          "(Explanation: 1 Timoteo 6:10 - Love of Money ): Lahat ng bagay na nasa Sanglibutan ay pagmamay-ari ng Dyos, ngunit wag nyo ibigin ang mga ito, sapagkat ito ay kasamaan/evil.",
+      },
+      {
+        key: "1 Timoteo 6:5",
+        values: [
+          "5 Pagtataltalan ng mga taong masasama ang pagiisip at salat sa katotohanan, na nagsisipagakala na ang kabanalan ay paraan ng pakinabang.",
+        ],
+        title:
+          "BULAANG MANGANGARAL: Mga mangangaral na kulang ang kaalaman ay ginagamit ang Evangelio/salita ng Panginoon para sa pakinabang sa kanilang mga sarili.",
+      },
+      {
+        key: "Mateo 10:8",
+        values: [
+          "8 Mangagpagaling kayo ng mga may sakit, mangagpabangon kayo ng mga patay, mangaglinis kayo ng mga ketong, mangagpalabas kayo ng mga demonio: tinanggap ninyong walang bayad, ay ibigay ninyong walang bayad.",
+        ],
+        title:
+          "TUNAY NA MANGANGARAL: Ang tunay na mangangaral ni Cristo ay hindi nagpapabayad at hindi nag-hihingi ng kapalit.",
+      },
+      {
+        key: "1 Corinto 2:12",
+        values: [
+          "12 Nguni't ating tinanggap, hindi ang espiritu ng sanglibutan, kundi ang espiritung mula sa Dios; upang ating mapagkilala ang mga bagay na sa atin ay ibinigay na walang bayad ng Dios.",
+        ],
+        title:
+          "Binigay ng Dyos sa atin walang bayad ang Evangelio, Ibahagi naten ito ng walang bayad.",
+      },
+      {
+        key: "Romans 6:23",
+        values: [
+          "Sapagka't ang kabayaran ng kasalanan ay kamatayan; datapuwa't ang kaloob na walang bayad ng Dios ay buhay na walang hanggan kay Cristo Jesus na Panginoon natin.",
+        ],
+        title:
+          "Ang tumanggap ng Evangelio kay Cristo ay tatanggap ng buhay na walang hanggan, ngunit ang mga nangag-kasala ay sisingilin at kamatayan ang hatol sa kanila.",
+      },
+      {
+        key: "1 Corinto 2:14",
+        values: [
+          "14 Nguni't ang taong ayon sa laman ay hindi tumatanggap ng mga bagay ng Espiritu ng Dios: sapagka't ang mga ito ay kamangmangan sa kaniya; at hindi niya nauunawa, sapagka't ang mga yaon ay sinisiyasat ayon sa espiritu.",
+        ],
+        title:
+          "Ang taong ayon sa laman ay hindi bibiyaan ng Dyos ng tunay na Kayamanan. Hindi nila masusumpungan at mauunawan ito.",
+      },
+      {
+        key: "Deuteronomy 10:17",
+        values: [
+          "17 Sapagka't ang Panginoon ninyong Dios, ay siyang Dios ng mga dios, at Panginoon ng mga panginoon, siyang dakilang Dios, siyang makapangyarihan at siyang kakilakilabot, na hindi nagtatangi ng tao ni tumatanggap ng suhol.",
+        ],
+        title:
+          "Ang Dyos ay hindi tumatanggap ng suhol ng tao! at ang kanyang mga alagad.",
+      },
+      {
+        key: "Exodus 23:8",
+        values: [
+          "8 At huwag kang tatanggap ng suhol: sapagka't ang suhol ay bumubulag sa mga may paningin, at sinisira ang mga salita ng mga banal.",
+        ],
+        title:
+          "Ang tunay na taga-sunod/manga-ngaral ng Dyos ay hindi tumatanggap ng suhol.",
+      },
+      {
+        key: "Ephesians 5: 6-7,11",
+        values: [
+          "6 Huwag kayong madaya ng sinoman ng mga salitang walang kabuluhan: sapagka't dahil sa mga bagay na ito'y dumarating ang galit ng Dios sa mga anak ng pagsuway.",
+          "7 Huwag kayong makibahagi sa kanila;",
+          "11 At huwag kayong makibahagi sa mga walang mapapakinabang na gawa ng kadiliman, kundi bagkus inyong sawatain;",
+        ],
+        title:
+          "(Explanation: 1 Timoteo 6:11) - Wag tayong makibahagi sa maling aral, ipakita naten sa ating sarili, sa ating kapatiran na ito ay kasalanan.",
+      },
+      {
+        key: "2 John 1:9-11",
+        values: [
+          "9 Ang sinomang nagpapatuloy at hindi nananahan sa aral ni Cristo, ay hindi kinaroroonan ng Dios: ang nananahan sa aral, ay kinaroroonan ng Ama at gayon din ng Anak.",
+          "10 Kung sa inyo'y dumating ang sinoman, at hindi dala ang aral na ito, ay huwag ninyong tanggapin sa inyong bahay, at huwag ninyo siyang batiin:",
+          "11 Sapagka't ang bumabati sa kaniya ay nararamay sa kaniyang masasamang gawa.",
+        ],
+        title: "Wag papasukin sa inyong mga puso ang kanilang masasamang gawa.",
+      },
+      {
+        key: "Romans 16:17",
+        values: [
+         "17 Ngayo'y ipinamamanhik ko sa inyo, mga kapatid, na tandaan ninyo yaong mga pinanggagalingan ng pagkakabahabahagi at ng mga katitisuran, laban sa mga aral na inyong nangapagaralan: at kayo'y magsilayo sa kanila."
+        ],
+        title: "Tayo ay matuto sa mga kasamaan ng tao, at tayo ay magsilayo sa mga mangangaral/taong na makasalan",
+      },
+      {
+        key: "Romans 1:17",
+        values: [
+         "17 Sapagka't dito ang katuwiran ng Dios ay nahahayag mula sa pananampalataya hanggang sa pananampalataya: gaya ng nasusulat, Nguni't ang ganap ay mabubuhay sa pamamagitan ng pananampalataya."
+        ],
+        title: "Sundin mo ang Katwiran('Faith'/'Pananampalataya')",
+      },
+      {
+        key: "John 17:17",
+        values: [
+         "17 Pakabanalin mo sila sa katotohanan: ang salita mo'y katotohanan."
+        ],
+        title: "Sundin mo ang Katotohanan(Jesucristo)",
+      },
+      {
+        key: "Romans 10:17",
+        values: [
+         "17 Kaya nga ang paniniwala'y nanggagaling sa pakikinig, at ang pakikinig ay sa pamamagitan ng salita ni Cristo."
+        ],
+        title: "Paano nagsisimula ang Faith/Pananampalataya?",
+      },
+      {
+        key: "Hebrew 11:1",
+        values: [
+         "1 Ngayon, ang pananampalataya ay siyang kapanatagan sa mga bagay na hinihintay, ang katunayan ng mga bagay na hindi nakikita."
+        ],
+        title: "Ang TUNAY na PANANAMPALATAYA",
+      },
+      {
+        key: "John 14: 15,21,23",
+        values: [
+         "15 Kung ako'y inyong iniibig, ay tutuparin ninyo ang aking mga utos."
+        ],
+        title: "Paano mahalin/ibigin ang Dyos?",
+      },
+      {
+        key: "Mateo 7:24",
+        values: [
+         "24 Kaya't ang bawa't dumirinig ng aking mga salitang ito at ginaganap, ay matutulad sa isang taong matalino, na itinayo ang kaniyang bahay sa ibabaw ng bato:"
+        ],
+        title: "Ang sumusunod sa Evangelio ay ang mga tunay na mga Matalino.",
+      },
+    ],
+  },
+  {
     date: "24/04/2022",
     topic: "Great Men - Jeremiah 5:5-6",
     verses: [
@@ -214,8 +453,7 @@ export const BIBLE_STUDY = [
         values: [
           "But unto you I say, and unto the rest in Thyatira, as many as have not this doctrine, and which have not known the depths of Satan, as they speak; I will put upon you none other burden.",
         ],
-        title:
-          "Hindi tayo hangal sa mga pakulo at daya ni Satanas",
+        title: "Hindi tayo hangal sa mga pakulo at daya ni Satanas",
       },
     ],
   },
