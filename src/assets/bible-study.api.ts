@@ -1,7 +1,7 @@
 export const BIBLE_STUDY = [
   {
     date: "15/05/2022",
-    video_url: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F105572605159615%2Fvideos%2F371825568230298%2F&show_text=false&width=560&t=0",
+    video_url: "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F105572605159615%2Fvideos%2F1541112096307965%2F&show_text=false&width=560&t=0",
     topic:
       "Ang Pagmamahal sa Materyal na Bagay ay Kasalanan - 1 Timothy 6:7-11",
     verses: [
