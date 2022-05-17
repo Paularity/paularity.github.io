@@ -1,17 +1,41 @@
 <div class="container bg-dark text-light p-4">
-  <h1>TOPIC: {{selectedTopic.topic}} - {{selectedTopic.date}}</h1>
 
-  <div class="w-100 text-center my-5"><iframe class="m-auto" [src]="selectedTopic.video_url | safe" width="560"
-      height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
-      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  <div class="px-4 py-2 rounded text-dark" style="background-color: #dadada;">
+    <p class=" font-weight-bold"><span><i class="fa fa-search"></i></span> Search a Bible Topic:</p>
+    <mat-form-field class="w-100">
+      <mat-select placeholder="Select a bible topic..." (selectionChange)="onFilter($event.value)">
+        <mat-option *ngFor="let bs of bibleStudy" [value]="bs">
+          {{ bs.topic }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </div>
-  <hr class="bg-light">
-  <ul *ngFor="let verse of selectedTopic.verses">
-    <li>
-      <p class="font-weight-bold">{{ verse.key }} - {{verse.title}}</p>
-      <div class="p-4 text-dark bg-light font-italic rounded">
-        <p *ngFor="let value of verse.values">- {{ value }}</p>
+
+  <ng-container *ngIf="selectedTopic.value; else noTopicBlock">
+    <div class="px-4 py-2 rounded text-dark mt-2" style="background-color: #bdbdbd;">
+      <div class="p-4 rounded mx-0 mt-2 pb-5 text-center" style="background-color: #1f4a6f;">
+        <h1 class="mt-5 header-chan">{{selectedTopic.value.topic}} - {{selectedTopic.value.date}}</h1>
       </div>
-    </li>
-  </ul>
+      <div class="w-100 text-center my-5"><iframe class="m-auto" [src]="selectedTopic.value.video_url | safe"
+          width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowFullScreen="true"></iframe>
+      </div>
+      <hr class="bg-light">
+      <ul *ngFor="let verse of selectedTopic.value.verses">
+        <li>
+          <p class="font-weight-bold">{{ verse.key }} - {{verse.title}}</p>
+          <div class="p-4 text-dark bg-light font-italic rounded">
+            <p *ngFor="let value of verse.values">- {{ value }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </ng-container>
+  <ng-template #noTopicBlock>
+    <div class="mt-5">
+      No selected topic yet...
+    </div>
+  </ng-template>
+
 </div>
