@@ -2,13 +2,37 @@
 
   <div class="px-4 py-2 rounded text-dark" style="background-color: #dadada;">
     <p class=" font-weight-bold"><span><i class="fa fa-search"></i></span> Search a Bible Topic:</p>
-    <mat-form-field class="w-100">
+    <!-- <mat-form-field class="w-100">
       <mat-select placeholder="Select a bible topic..." (selectionChange)="onFilter($event.value)">
         <mat-option *ngFor="let bs of bibleStudy" [value]="bs">
           {{ bs.topic }}
         </mat-option>
       </mat-select>
-    </mat-form-field>
+    </mat-form-field> -->
+    <!-- <mat-form-field>
+      <input type="text" matInput [matAutocomplete]="auto" (change)="onFilter($event.value)">
+    </mat-form-field> -->
+
+    <!-- <mat-form-field class="w-100">
+      <input type="text" placeholder="Topic" matInput [formControl]="bibleControl" [matAutocomplete]="auto"
+        class="chan-auto-complete">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let option of bibleStudy" [value]="option">
+          {{ option.topic }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field> -->
+    <form>
+      <mat-form-field class="w-100 text-dark">
+        <input class="chan-auto-complete" type="text" placeholder="Topic" aria-label="Topic" matInput
+          [formControl]="bibleControl" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let option of bibleOptions | async" [value]="option">
+            {{ option.topic }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
   </div>
 
   <ng-container *ngIf="selectedTopic.value; else noTopicBlock">
@@ -16,11 +40,9 @@
       <div class="p-4 rounded mx-0 mt-2 pb-5 text-center" style="background-color: #1f4a6f;">
         <h1 class="mt-5 header-chan">{{selectedTopic.value.topic}} - {{selectedTopic.value.date}}</h1>
       </div>
-      <div class="w-100 text-center my-5"><iframe class="m-auto" [src]="selectedTopic.value.video_url | safe"
-          width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-          allowFullScreen="true"></iframe>
-      </div>
+      <a id="play-video" class="video-play-button" (click)="openDialog(selectedTopic.value.video_url)">
+        <span></span>
+      </a>
       <hr class="bg-light">
       <ul *ngFor="let verse of selectedTopic.value.verses">
         <li>

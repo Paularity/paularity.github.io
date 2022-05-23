@@ -1,6 +1,15 @@
 <div id="dialog-container">
   <div class="row">
-    <a (click)="this.dialogRef.close()" class="ml-auto px-3" id="close-btn"><span ><i class="fa fa-times fa-2x text-white"></i></span></a>
+    <a (click)="this.dialogRef.close()" class="ml-auto px-3" id="close-btn"><span><i
+          class="fa fa-times fa-2x text-white"></i></span></a>
   </div>
-  <div class="row p-3"><img [src]="data?.src" alt="" style="max-width: 100%; max-height: 700px;"></div>
+  <ng-container *ngIf="data?.isVideo === false; else videoContainer">
+    <div class="row p-3"><img [src]="data?.src | safe" alt="" style="max-width: 100%; max-height: 700px;"></div>
+  </ng-container>
+  <ng-template #videoContainer>
+    <div class="w-100 text-center my-5"><iframe class="m-auto" [src]="data?.src | safe" width="560"
+        height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+  </ng-template>
 </div>
