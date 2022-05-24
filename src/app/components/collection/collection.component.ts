@@ -33,7 +33,7 @@ export class CollectionComponent implements OnInit {
 
   openDialog(src) {
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.data = { src, isVideo: true };
+    dialogConfig.data = { src, isVideo: false };
     const dialogRef = this.dialog.open(LightboxModalComponent, dialogConfig);
 
     // dialogRef.afterClosed().subscribe((result) => {

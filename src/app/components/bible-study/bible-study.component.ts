@@ -37,7 +37,7 @@ export class BibleStudyComponent implements OnInit {
 
   openDialog(src) {
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.data = { src };
+    dialogConfig.data = { src, isVideo: true };
     const dialogRef = this.dialog.open(LightboxModalComponent, dialogConfig);
 
     // dialogRef.afterClosed().subscribe((result) => {
