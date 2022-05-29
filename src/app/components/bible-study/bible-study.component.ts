@@ -5,6 +5,7 @@ import { BehaviorSubject, map, Observable, startWith, tap } from "rxjs";
 import { FormControl } from "@angular/forms";
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { LightboxModalComponent } from "../collection/lightbox-modal/lightbox-modal.component";
+import { BibleStudyService } from "src/app/core/services/bible-study-service/bible-study.service";
 @Component({
   selector: "app-bible-study",
   templateUrl: "./bible-study.component.html",
@@ -19,11 +20,11 @@ export class BibleStudyComponent implements OnInit {
   bibleControl: FormControl = new FormControl();
   bibleOptions: Observable<any>;
 
-  constructor(public dialog: MatDialog) {
-    this.bibleStudy = BIBLE_STUDY.map((bs) => {
-      bs.date = moment(bs.date).format("MMM DD YYYY");
-      return bs;
-    });
+  constructor(
+    public dialog: MatDialog,
+    private bibleStudyService: BibleStudyService
+  ) {
+
   }
 
   ngOnInit() {
@@ -33,7 +34,15 @@ export class BibleStudyComponent implements OnInit {
       map((topic) => (topic ? this.filter(topic) : this.bibleStudy.slice())),
       tap((topic) => this.onFilter(topic))
     );
-  }
+
+    this.bibleStudyService.loadTopics();
+    this.bibleStudyService.getTopics$().subscribe((res)=>{
+      this.bibleStudy = res.map((bs) => {
+        bs.date = moment(bs.date).format("MMM DD YYYY");
+        return bs;
+      });
+    });
+    }
 
   openDialog(src) {
     const dialogConfig = new MatDialogConfig();

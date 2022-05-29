@@ -16,15 +16,18 @@ import { ServicesComponent } from "./components/services/services.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LightboxModalComponent } from "./components/collection/lightbox-modal/lightbox-modal.component";
-// import { AngularFireModule } from "@angular/fire/compat";
-// import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
-// import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
+import { AngularFireModule } from "@angular/fire/compat";
+import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
+import { AngularFirestoreModule } from "@angular/fire/compat/firestore";
 import { environment } from "../environments/environment";
 import { WebdevModalComponent } from "./components/career/webdev-modal/webdev-modal.component";
 import { MobiledevModalComponent } from "./components/career/mobiledev-modal/mobiledev-modal.component";
 import { BibleStudyComponent } from "./components/bible-study/bible-study.component";
 import { SafePipe } from "./safe.pipe";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { TvGuideModule } from "./tv-guide/tv-guide.module";
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +56,11 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    TvGuideModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    HttpClientModule
     // AngularFireModule.initializeApp(environment.firebase),
     // AngularFireAnalyticsModule,
     // AngularFirestoreModule,

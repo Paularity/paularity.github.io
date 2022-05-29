@@ -458,4 +458,188 @@ export const BIBLE_STUDY = [
       },
     ],
   },
+  {
+    date: "05/29/2022",
+    video_url:
+      "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F105572605159615%2Fvideos%2F991087784873340%2F&show_text=false&width=560&t=0",
+    topic: "KAUTUSAN NG PANANAMPALATAYA",
+    verses: [
+      {
+        key: "Romans 3:27-31",
+        values: [
+          "27. Kaya nga saan naroon ang pagmamapuri? Ito'y inihiwalay na. Sa pamamagitan ng anong kautusan? ng mga gawa? Hindi: kundi sa pamamagitan ng kautusan ng pananampalataya.",
+          "28. Kaya nga maipasisiya natin na ang tao ay inaaring-ganap sa pananampalataya na hiwalay sa mga gawa ng kautusan.",
+          "29 O ang Dios baga ay Dios ng mga Judio lamang? hindi baga siya ang Dios din ng mga Gentil? Oo, ng mga Gentil din naman:",
+          "30 Kung gayon nga na iisa ang Dios, at kaniyang aariing-ganap ang pagtutuli sa pamamagitan ng pananampalataya, at ang di pagtutuli sa pamamagitan ng pananampalataya.",
+          "31 Niwawalan kaya nating kabuluhan ang kautusan sa pamamagitan ng pananampalataya? Huwag nawang mangyari: kundi pinagtitibay pa nga natin ang kautusan.",
+        ],
+        title: "Main Topic",
+      },
+      {
+        key: "John 1:17-18",
+        values: [
+          "17 Sapagka't ibinigay sa pamamagitan ni Moises ang kautusan; ang biyaya at ang katotohanan ay nagsidating sa pamamagitan ni Jesu-cristo.",
+          "18 Walang taong nakakita kailan man sa Dios; ang bugtong na Anak, na nasa sinapupunan ng Ama, siya ang nagpakilala sa kanya.",
+        ],
+        title:
+          "Ang kautsan ni Moises ay binigay sa bansang Israel, ang biyaya at katotohanan ay kay Jesu-cristo.",
+      },
+      {
+        key: "Hebrews 1:1",
+        values: [
+          "1 Ang Dios, na nagsalita nang unang panahon sa ating mga magulang sa iba't ibang panahon at sa iba't ibang paraan sa pamamagitan ng mga propeta,",
+        ],
+        title: "Old Testament - Sa pamamagitan ng mga Propeta",
+      },
+      {
+        key: "Hebrews 9:1-10",
+        values: [
+          "1 Ngayon, ang unang tipan din ay nagkaroon ng mga palatuntunan ng pagsamba sa Dios, at ng kaniyang santuario, ang santuario ng sanglibutang ito.",
+          "2 Sapagka't inihanda ang isang tabernakulo, ang una, na kinaroroonan ng kandelero, at ng dulang, at ng mga tinapay na handog; na siyang tinatawag na Dakong Banal.",
+          "3 At sa likod ng ikalawang tabing ay ang tabernakulo na tinatawag na Dakong Kabanalbanalan;",
+          "4 Na may isang gintong dambana ng kamangyan at kaban ng tipan, at ang paligid ay nakakalupkupan ng ginto, na siyang kinaroroonan ng sisidlang-ginto na may lamang mana, at tungkod ni Aaron na namulaklak, at mga tapyas na bato ng tipan;",
+          "5 At sa ibabaw nito ay ang mga querubin ng kaluwalhatian na nangagsisililim sa luklukan ng awa; na ang mga bagay na ito ay hindi natin mapaguusapan ngayon ng isa isa.",
+          "6 At sa ganitong pagkahanda ng mga bagay na ito, sa unang tabernakulo ay palaging nagsisipasok ang mga saserdote, na tinutupad ang mga katungkulan;",
+          "7 Datapuwa't sa ikalawa ay pumapasok na nagiisa ang dakilang saserdote, minsan sa isang taon, na hindi walang dalang dugo, na inihahandog na patungkol sa kaniyang sarili, at sa mga kamalian ng bayan:",
+          "8 Na ipinakikilala ng Espiritu Santo, na hindi pa naihahayag ang pagpasok sa dakong banal samantalang natatayo pa ang unang tabernakulo;",
+          "9 Na yao'y isang talinghaga ng panahong kasalukuyan; ayon dito ay inihahandog ang mga kaloob at ang mga hain, tungkol sa budhi, na hindi magpapasakdal sa sumasamba,",
+          "10 Palibhasa'y palatuntunan lamang na ukol sa laman, na iniatang hanggang sa panahon ng pagbabago (gaya ng mga pagkain, at mga inumin at sarisaring paglilinis).",
+        ],
+        title: "Mga Palatuntunan at mga Batas ng Lumang Tipan",
+      },
+      {
+        key: "Galatians 3:19",
+        values: [
+          "19 Ano nga ang kabuluhan ng kautusan? Idinagdag dahil sa mga pagsalangsang, hanggang sa pumarito ang binhi na siyang pinangakuan; at ito'y iniutos sa pamamagitan ng mga anghel sa kamay ng isang tagapamagitan.",
+        ],
+        title: "Ano ba ang tamang kautusan?",
+      },
+      {
+        key: "Romans 3:1-2",
+        values: [
+          "1 Ano nga ang kahigitan ng Judio? o ano ang mapapakinabang sa pagtutuli?",
+          "2 Marami sa anomang paraan: ang una sa lahat, ay ipinagkatiwala sa kanila ang mga aral ng Dios.",
+        ],
+        title: "Ano ba ang pagtutuli/paglilinis?",
+      },
+      {
+        key: "Hosea 4:6",
+        values: [
+          "6 Ang aking bayan ay nasira dahil sa kakulangan ng kaalaman: sapagka't ikaw ay nagtakuwil ng kaalaman, akin namang itatakuwil ka, upang ikaw ay huwag maging saserdote ko: yamang iyong nilimot ang kautusan ng iyong Dios, akin namang kalilimutan ang iyong mga anak.",
+        ],
+        title: "Nang dahil sa Kakulangan ng Kaalaman",
+      },
+      {
+        key: "Romans 3:20",
+        values: [
+          "20 Sapagka't sa pamamagitan ng mga gawa ng kautusan ay walang laman na aariing-ganap sa paningin niya; sapagka't sa pamamagitan ng kautusan ay ang pagkakilala ng kasalanan.",
+        ],
+        title: "Sa pagkakilala ng KAUTUSAN ay ang pagkakilala ng KASALANAN.",
+      },
+      {
+        key: "Galatians 3:24-25",
+        values: [
+          "24 Ano pa't ang kautusan ay siyang naging tagapagturo natin upang ihatid tayo kay Cristo, upang tayo'y ariing-ganap sa pamamagitan ng pananampalataya.",
+          "25 Datapuwa't ngayong dumating na ang pananampalataya, ay wala na tayo sa ilalim ng tagapagturo.",
+        ],
+        title:
+          "Ang Kautusan ay ang Tagapagturo, Pero Dumating na ang Pananampalataya upang ating sundan.",
+      },
+      {
+        key: "Mateo 22: 37-40",
+        values: [
+          "37 At sinabi sa kaniya, Iibigin mo ang Panginoon mong Dios ng buong puso mo, at ng buong kaluluwa mo, at ng buong pagiisip mo.",
+          "38 Ito ang dakila at pangunang utos.",
+          "39 At ang pangalawang katulad ay ito, Iibigin mo ang iyong kapuwa na gaya ng iyong sarili.",
+          "40 Sa dalawang utos na ito'y nauuwi ang buong kautusan, at ang mga propeta.",
+        ],
+        title: "Ang Dakilang UTOS ng Dios, at ang dalawang Katulad nito.",
+      },
+      {
+        key: "Luke 16:16",
+        values: [
+          "16 Ang kautusan at ang mga propeta ay nanatili hanggang kay Juan: mula noo'y ang evangelio ng kaharian ng Dios ay ipinangangaral, at ang bawa't tao ay pumapasok doon na nagpipilit.",
+        ],
+        title: "Ang kautusan ng mga propeta ay tapos na!",
+      },
+      {
+        key: "Hebrew 10:9",
+        values: [
+          "9 Saka sinabi niya, Narito, ako'y pumarito upang gawin ang iyong kalooban. Inaalis niya ang una, upang maitatag ang ikalawa.",
+        ],
+        title: "Inalis na ang Kautsan sa Lumang Tipan.",
+      },
+      {
+        key: "John 1:29",
+        values: [
+          "29 Nang kinabukasan ay nakita ni Juan si Jesus na lumalapit sa kaniya, at sinabi, Narito, ang Cordero ng Dios, na nagaalis ng kasalanan ng sanglibutan!",
+        ],
+        title: "Ang nag-aalis ng kasalanan ng sanglibutan.",
+      },
+      {
+        key: "Matthew 5:20",
+        values: [
+          "20 Sapagka't sinasabi ko sa inyo, na kung hindi hihigit ang inyong katuwiran sa katuwiran ng mga eskriba at mga Fariseo, sa anomang paraan ay hindi kayo magsisipasok sa kaharian ng langit.",
+        ],
+        title: "Mga Katwiran ng mga bulaang mangangaral.",
+      },
+      {
+        key: "Efeso 2:8-9",
+        values: [
+          "8 Sapagka't sa biyaya kayo'y nangaligtas sa pamamagitan ng pananampalataya; at ito'y hindi sa inyong sarili, ito'y kaloob ng Dios;",
+          "9 Hindi sa pamamagitan ng mga gawa, upang ang sinoman ay huwag magmapuri.",
+        ],
+        title: "Ang tunay na biyaya.",
+      },
+      {
+        key: "Lukas 4:22",
+        values: [
+          "22 At siya'y pinatotohanan ng lahat, at nangagtataka sa mga salita ng biyaya na lumalabas sa kaniyang bibig: at sinabi nila, Hindi baga ito ang anak ni Jose?",
+        ],
+        title: "Ang biyaya mula kay Jesus",
+      },
+      {
+        key: "Santiago 1:25",
+        values: [
+          "25 Nguni't ang nagsisiyasat ng sakdal na kautusan, ang kautusan ng kalayaan, at nananatiling gayon, na hindi tagapakinig na lumilimot, kundi tagatupad na gumagawa, ay pagpapalain ang taong ito sa kaniyang ginagawa.",
+        ],
+        title: "Ang taong pag-papalain ng Dyos ay mga nagsisiyasat ng Sakdal na Kautasan (Kautasan ng Pananampalataya).",
+      },
+      {
+        key: "Galatians 5:1",
+        values: [
+          "1 Sa kalayaan ay pinalaya tayo ni Cristo: magsitibay nga kayo, at huwag na kayong pasakop na muli sa pamatok ng pagkaalipin.",
+        ],
+        title: "Pinalaya na tayo ni Cristo sa kasinungalingan",
+      },
+      {
+        key: "Romams 14:23",
+        values: [
+          "23 Nguni't ang nagaalinlangan ay hinahatulan kung kumakain, sapagka't hindi siya kumakain sa pananampalataya; at ang anomang hindi sa pananampalataya ay kasalanan.",
+        ],
+        title: "Anomang hindi sa pananampalataya ay kasalanan",
+      },
+      {
+        key: "Galatians 3:12",
+        values: [
+          "12 At ang kautusan ay hindi sa pananampalataya; kundi, Ang gumaganap ng mga yaon ay mabubuhay sa mga yaon.",
+        ],
+        title: "Ang kasalanan: Kautusan",
+      },
+      {
+        key: "Santiago 2:10",
+        values: [
+          "10 Sapagka't ang sinomang gumaganap ng buong kautusan, at gayon ma'y natitisod sa isa, ay nagiging makasalanan sa lahat.",
+        ],
+        title: "Ang kautusan ay hindi nasunod, kayat ang pananampalataya kay Jesus ang Sagot at ang Katotohanan.",
+      },
+      {
+        key: "John 1:51",
+        values: [
+          "51 At sinabi niya sa kaniya, Katotohanan, katotohanang sinasabi ko sa iyo, Makikita ninyong bukas ang langit, at ang mga anghel ng Dios na nagmamanhik-manaog sa ulunan ng Anak ng tao.",
+        ],
+        title: "Tower of Babel",
+      },
+    ],
+  },
 ];
