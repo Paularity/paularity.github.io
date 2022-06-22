@@ -27,9 +27,11 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatSliderModule } from "@angular/material/slider";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import {MatRadioModule} from '@angular/material/radio';
 
 // Add Material Components here...
 const MaterialComponents = [
+  MatRadioModule,
   MatToolbarModule,
   MatMenuModule,
   MatPaginatorModule,

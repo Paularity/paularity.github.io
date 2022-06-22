@@ -16,6 +16,7 @@ export class BibleStudyComponent implements OnInit {
   selectedDate: string;
 
   selectedTopic: BehaviorSubject<any> = new BehaviorSubject(null);
+  selectedRadioTopic: any;
 
   bibleControl: FormControl = new FormControl();
   bibleOptions: Observable<any>;
@@ -23,26 +24,26 @@ export class BibleStudyComponent implements OnInit {
   constructor(
     public dialog: MatDialog,
     private bibleStudyService: BibleStudyService
-  ) {
-
-  }
+  ) {}
 
   ngOnInit() {
     this.bibleOptions = this.bibleControl.valueChanges.pipe(
       startWith<string | any>(""),
       map((bs) => (typeof bs === "string" ? bs : bs.topic)),
-      map((topic) => (topic ? this.filter(topic) : this.bibleStudy.slice())),
-      tap((topic) => this.onFilter(topic))
+      map((topic) =>
+        topic ? this.filter() : this.bibleStudy.slice()
+      ),
+      tap((topic) => this.onFilter())
     );
 
     this.bibleStudyService.loadTopics();
-    this.bibleStudyService.getTopics$().subscribe((res)=>{
+    this.bibleStudyService.getTopics$().subscribe((res) => {
       this.bibleStudy = res.map((bs) => {
         bs.date = moment(bs.date).format("MMM DD YYYY");
         return bs;
       });
     });
-    }
+  }
 
   openDialog(src) {
     const dialogConfig = new MatDialogConfig();
@@ -54,17 +55,19 @@ export class BibleStudyComponent implements OnInit {
     // });
   }
 
-  filter(topic: string) {
+  filter() {
     return this.bibleStudy.filter(
-      (option) => option.topic.toLowerCase().indexOf(topic.toLowerCase()) === 0
+      (option) =>
+        option.topic
+          .toLowerCase()
+          .indexOf(this.selectedRadioTopic.topic.toLowerCase()) === 0
     );
   }
 
-  onFilter(bibleTopic?) {
-    if (bibleTopic.length === 1) {
-      let topic = this.bibleStudy.find((b) => b.date === bibleTopic[0].date);
-      this.selectedTopic.next(topic);
-    }
+  onFilter() {
+    console.log(this.selectedRadioTopic)
+    let topic = this.bibleStudy.find((b) => b.date === this.selectedRadioTopic.date);
+    this.selectedTopic.next(topic);
   }
 
   displayFn(bible?: any): string | undefined {

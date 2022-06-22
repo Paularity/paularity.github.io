@@ -22,4 +22,8 @@ describe('DashboardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('has currentDay', ()=>{
+    expect(component.currentDay).toBeTruthy();
+  })
 });

@@ -9,6 +9,9 @@
         </mat-option>
       </mat-select>
     </mat-form-field> -->
+    <mat-radio-group class="bs-radio-group" aria-label="Select a topic" [(ngModel)]="selectedRadioTopic" (ngModelChange)="onFilter()">
+      <mat-radio-button class="bs-radio-button" *ngFor="let bs of bibleStudy" [value]="bs">{{ bs.topic }}</mat-radio-button>
+    </mat-radio-group>
     <!-- <mat-form-field>
       <input type="text" matInput [matAutocomplete]="auto" (change)="onFilter($event.value)">
     </mat-form-field> -->
@@ -22,7 +25,7 @@
         </mat-option>
       </mat-autocomplete>
     </mat-form-field> -->
-    <form>
+    <!-- <form>
       <mat-form-field class="w-100 text-dark">
         <input class="chan-auto-complete" type="text" placeholder="Topic" aria-label="Topic" matInput
           [formControl]="bibleControl" [matAutocomplete]="auto">
@@ -32,7 +35,7 @@
           </mat-option>
         </mat-autocomplete>
       </mat-form-field>
-    </form>
+    </form> -->
   </div>
 
   <ng-container *ngIf="selectedTopic.value; else noTopicBlock">

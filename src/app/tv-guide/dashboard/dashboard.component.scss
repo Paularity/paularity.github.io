@@ -1,0 +1,15 @@
+td{
+  border: 1px solid;
+  padding: 20px;
+  // display: block;
+}
+.chan-auto-complete{
+  color: #3f3f3f;
+}
+
+input.chan-auto-complete {
+
+  &:focus{
+    caret-color: black !important;
+  }
+}

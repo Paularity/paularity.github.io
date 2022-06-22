@@ -3,26 +3,26 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { BibleStudyComponent } from './bible-study.component';
+import { AdminComponent } from './admin.component';
 
-describe('BibleStudyComponent', () => {
-  let component: BibleStudyComponent;
-  let fixture: ComponentFixture<BibleStudyComponent>;
+describe('AdminComponent', () => {
+  let component: AdminComponent;
+  let fixture: ComponentFixture<AdminComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BibleStudyComponent ]
+      declarations: [ AdminComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BibleStudyComponent);
+    fixture = TestBed.createComponent(AdminComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 });

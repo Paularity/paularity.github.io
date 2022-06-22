@@ -1,1 +1,66 @@
-<p>dashboard works!</p>
+<div style="background-color: #fff; padding: 20px; border-radius: 4px; margin: 20px; overflow: auto;">
+  <table style="max-width: 100%; overflow: auto; display: block; table-layout: fixed;">
+    <thead>
+      <tr>
+        <td [attr.colspan]="timeRange.length + 1"
+          style="background-color: #cacaca; font-weight: bold; padding: 0 20px;">
+          Paularity TV BOX
+          <mat-form-field class="ml-3 text-dark">
+            <input class="chan-auto-complete" matInput [matDatepicker]="picker" placeholder="Choose a date"
+              [(ngModel)]="currentDay">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker touchUi="true" #picker></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="ml-5">
+            <mat-select placeholder="Start">
+              <mat-option *ngFor="let time of timeRange" (onSelectionChange)="onChangeTimeRange(time, endRange)">
+                {{ time | date: 'hh:mm a' }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="ml-3">
+            <mat-select placeholder="End">
+              <mat-option *ngFor="let time of timeRange" (onSelectionChange)="onChangeTimeRange(time, endRange)">
+                {{ time | date: 'hh:mm a' }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center" valign="middle" style="font-weight: bold; background-color: #c3e4fa;">Channels</td>
+        <ng-container *ngFor="let time of timeRange">
+          <td align="center" valign="middle" style="padding: 10px 10px;background-color: #e7e7e7;">
+            <p style="width: 120px; margin: 0; font-weight: bold;">{{ time | date: 'hh:mm a' }}</p>
+          </td>
+        </ng-container>
+      </tr>
+      <tr *ngFor="let channel of channels">
+        <td style="background-color: #c3e4fa;">{{channel.name}}</td>
+        <td [attr.colspan]="timeRange.length" style="position: relative;">
+          <ng-container *ngTemplateOutlet="currentDayBar"></ng-container>
+          <ng-container *ngFor="let show of shows">
+            <div *ngIf="show.channelId === channel.id && isTodayShows(show)" [style.width]="getShowLength(show)"
+              [style.left]="getShowPosition(show)" [style.backgroundColor]="show.color"
+              style="height: 30px; border-radius: 4px; position: absolute; top: 30%;border: 1px solid #cacaca">
+              <div style="position: relative; width: 100%;">
+                <p
+                  style="font-weight: bold; text-align: center; text-overflow: ellipsis; white-space: nowrap; color: #fff; font-size: 14px;">
+                  {{ show.name }}( {{show.start | date:
+                  'HH:mm':"+0000"}}-{{show.end | date: 'HH:mm':"+0000"}} )</p>
+              </div>
+            </div>
+          </ng-container>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<ng-template #currentDayBar>
+  <div [style.left]="getCurrentPosition()"
+    style="background-color: #2ccc00; height: 100%; width: 2px; position: absolute; top: 0; z-index: 3;"></div>
+</ng-template>

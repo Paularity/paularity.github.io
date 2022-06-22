@@ -6,6 +6,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { CollectionComponent } from "./components/collection/collection.component";
 import { BibleStudyComponent } from "./components/bible-study/bible-study.component";
+import { AdminComponent } from "./components/bible-study/admin/admin.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent, data: { routeIndex: 0 } },
@@ -30,11 +31,17 @@ const routes: Routes = [
     path: "biblestudy",
     component: BibleStudyComponent,
     data: { routeIndex: 5 },
+    children: [],
+  },
+  {
+    path: "admin",
+    component: AdminComponent,
+    data: { routeIndex: 5 },
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
@@ -44,4 +51,5 @@ export const RoutingComponents = [
   CareerComponent,
   ServicesComponent,
   ContactComponent,
+  AdminComponent,
 ];

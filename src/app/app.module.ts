@@ -28,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { TvGuideModule } from "./tv-guide/tv-guide.module";
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { HttpClientModule } from "@angular/common/http";
+import { AdminComponent } from "./components/bible-study/admin/admin.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { HttpClientModule } from "@angular/common/http";
     WebdevModalComponent,
     MobiledevModalComponent,
     BibleStudyComponent,
+    AdminComponent,
     SafePipe,
   ],
   entryComponents: [LightboxModalComponent],
