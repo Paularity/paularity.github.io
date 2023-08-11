@@ -17,7 +17,7 @@ export class CollectionComponent implements OnInit {
   );
   inputTryCount: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 
-  private SECRET_CODE = "5139";
+  private SECRET_CODE = "paul5139";
 
   constructor(public dialog: MatDialog) {
     this.imagePorts = COLLECTION_LIST.collections.sort((a, b) => {
